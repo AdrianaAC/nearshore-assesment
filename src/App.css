@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+
+
+/* Regular Zebra striped table */
+.zebra tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;  /* Light gray for odd rows */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.zebra tbody tr:nth-child(even) {
+  background-color: #ffffff;  /* White for even rows */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Inverse Zebra striped table */
+.inverse-zebra tbody tr:nth-child(odd) {
+  background-color: #ffffff;  /* White for odd rows */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.inverse-zebra tbody tr:nth-child(even) {
+  background-color: #f2f2f2;  /* Light gray for even rows */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #4CAF50;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
