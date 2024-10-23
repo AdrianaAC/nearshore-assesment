@@ -8,7 +8,7 @@ interface FilterDropdownProps {
 
 const FilterDropdown: React.FC<FilterDropdownProps> = ({ filterOptions, onChange, label }) => {
   return (
-    <div>
+    <div className="filterDropdownContainer">
       <label>{label}</label>
       <select title="filter" onChange={(e) => onChange(e.target.value)}>
         {filterOptions.map(option => (

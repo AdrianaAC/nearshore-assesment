@@ -6,21 +6,18 @@ interface DataTableProps {
 }
 
 const DataTable: React.FC<DataTableProps> = ({ data }) => {
-  const [tableStyle, setTableStyle] = useState('zebra');
+  const [tableStyle, setTableStyle] = useState("zebra");
 
   const toggleTableStyle = () => {
-
-    setTableStyle((prevStyle) => (prevStyle === 'zebra' ? 'inverse-zebra' : 'zebra'));
+    setTableStyle((prevStyle) =>
+      prevStyle === "zebra" ? "inverse-zebra" : "zebra"
+    );
   };
 
   return (
     <div className="table-container">
-      <button onClick={toggleTableStyle}>
-        Toggle Table Style
-      </button> 
-      
       <table className={tableStyle}>
-        <thead>
+        <thead className="tableHead">
           <tr>
             <th>Model</th>
             <th>Make</th>
@@ -39,6 +36,10 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           ))}
         </tbody>
       </table>
+
+      <button className="styleToggle" onClick={toggleTableStyle}>
+        Toggle Table Style
+      </button>
     </div>
   );
 };

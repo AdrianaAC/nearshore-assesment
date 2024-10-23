@@ -1,5 +1,102 @@
 [
-    { "model": "Urus", "make": "Lamborghini", "year": 2017, "transmission": "Automatic" },
-    { "model": "Cayenne Turbo", "make": "Porsche", "year": 2018, "transmission": "Automatic" },
-    { "model": "Durango SRT", "make": "Dodge", "year": 2018, "transmission": "Automatic" }
-  ]
+  {
+    "model": "Urus",
+    "make": "Lamborghini",
+    "year": 2017,
+    "transmission": "Automatic"
+  },
+  { "model": "M5", "make": "BMW", "year": 2019, "transmission": "Manual" },
+  {
+    "model": "Cayenne Turbo",
+    "make": "Porsche",
+    "year": 2018,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Durango SRT",
+    "make": "Dodge",
+    "year": 2018,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "G-Class",
+    "make": "Mercedes-Benz",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Model X",
+    "make": "Tesla",
+    "year": 2019,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Range Rover Sport",
+    "make": "Land Rover",
+    "year": 2020,
+    "transmission": "Manual"
+  },
+  { "model": "Q8", "make": "Audi", "year": 2020, "transmission": "Automatic" },
+  {
+    "model": "Mustang GT",
+    "make": "Ford",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Civic Type R",
+    "make": "Honda",
+    "year": 2020,
+    "transmission": "Manual"
+  },
+
+  {
+    "model": "Navigator",
+    "make": "Lincoln",
+    "year": 2019,
+    "transmission": "Automatic"
+  },
+
+  {
+    "model": "Escalade",
+    "make": "Cadillac",
+    "year": 2020,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "WRX",
+    "make": "Subaru",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "X7",
+    "make": "BMW",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Miata",
+    "make": "Mazda",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Challenger R/T",
+    "make": "Dodge",
+    "year": 2020,
+    "transmission": "Manual"
+  },
+  {
+    "model": "GLS",
+    "make": "Mercedes-Benz",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Q7",
+    "make": "Audi",
+    "year": 2021,
+    "transmission": "Automatic"
+  }
+]
