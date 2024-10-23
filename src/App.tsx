@@ -1,26 +1,35 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from "react";
+import DataTable from "./dataTable";
+import FilterDropdown from "./filtersDropDown";
+import data from "./data.json"; 
 
-function App() {
+const App: React.FC = () => {
+  const [selectedMake, setSelectedMake] = useState("");
+  const [selectedYear, setSelectedYear] = useState("");
+
+  const filteredData = data.filter((row) => {
+    return (
+      (!selectedMake || row.make === selectedMake) &&
+      (!selectedYear || row.year === parseInt(selectedYear))
+    );
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edittt <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Filterable Data Table</h1>
+      <FilterDropdown
+        filterOptions={["Lamborghini", "Porsche", "Dodge"]}
+        onChange={setSelectedMake}
+        label="Filter by Make"
+      />
+      <FilterDropdown
+        filterOptions={["2017", "2018", "2014", "2012"]}
+        onChange={setSelectedYear}
+        label="Filter by Year"
+      />
+      <DataTable data={filteredData} />
     </div>
   );
-}
+};
 
 export default App;
