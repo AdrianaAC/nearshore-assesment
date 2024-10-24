@@ -80,7 +80,6 @@ h1 {
   font-size: 1.5em;
   margin: 0;
   color: rgb(190, 190, 201);
-
 }
 
 .searchSubTitle {
@@ -90,15 +89,27 @@ h1 {
   color: rgb(190, 190, 201);
 }
 
+th:not(.collapse-icon),
+td::not(.collapse-icon) {
+  width: 100px;
+}
+
+.expandCol {
+  width: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
 .searchContainer input {
   padding: 8px;
   border: 1px solid rgb(190, 190, 201);
   border-radius: 4px;
-  width: 200px; 
+  width: 200px;
   background-color: rgb(190, 190, 201);
   font-family: "Agdasima", sans-serif;
   text-align: center;
-  width: 50%
+  width: 50%;
 }
 
 .filterDropdownContainer label {
@@ -108,19 +119,19 @@ h1 {
 }
 
 .resetButton {
-  margin-left: 10px;         
-  padding: 8px 12px;          
-  background-color: #f44336;   
-  color: white;                
-  border: none;               
-  border-radius: 4px;        
-  font-family: "Agdasima", sans-serif; 
-  cursor: pointer;            
-  transition: background-color 0.3s; 
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Agdasima", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .resetButton:hover {
-  background-color: #d32f2f;   /* Darker shade on hover */
+  background-color: #d32f2f; /* Darker shade on hover */
 }
 
 .styleToggle {
@@ -132,15 +143,15 @@ h1 {
   color: rgb(190, 190, 201);
   border: 0px;
   font-size: larger;
-  border: none;               
-  border-radius: 4px;        
-  font-family: "Agdasima", sans-serif; 
-  cursor: pointer;            
-  transition: background-color 0.3s; 
+  border: none;
+  border-radius: 4px;
+  font-family: "Agdasima", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .styleToggle:hover {
-  background-color: rgb(190, 190, 201);  
+  background-color: rgb(190, 190, 201);
   color: #063c75;
 }
 
@@ -154,7 +165,6 @@ h1 {
   font-size: 14px;
   background-color: rgb(190, 190, 201);
 }
-
 
 .tableHead {
   font-size: 1em;
