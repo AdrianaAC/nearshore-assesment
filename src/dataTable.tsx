@@ -1,13 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
+interface CarData {
+  model: string;
+  make: string;
+  year: number;
+  transmission: string;
+}
+
 interface DataTableProps {
-  data: any;
+  data: CarData[];
 }
 
 const DataTable: React.FC<DataTableProps> = ({ data }) => {
   const [tableStyle, setTableStyle] = useState("zebra");
   const [expandedRows, setExpandedRows] = useState<number[]>([]);
+
+  useEffect(() => {
+    const initialExpandedRows = data.map((_, index) => index);
+    setExpandedRows(initialExpandedRows);
+  }, [data]);
 
   const toggleTableStyle = () => {
     setTableStyle((prevStyle) =>
@@ -24,6 +36,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
       }
     });
   };
+
   return (
     <div className="table-container">
       <table className={tableStyle}>
@@ -37,7 +50,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((row: any, index: number) => {
+          {data.map((row, index) => {
             const isExpanded = expandedRows.includes(index);
             return (
               <React.Fragment key={index}>
@@ -45,12 +58,6 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
                   <td>
                     <button
                       onClick={() => toggleRow(index)}
-                      style={{
-                        background: "transparent",
-                        border: "none",
-                        cursor: "pointer",
-                        color: "black",
-                      }}
                       className="expandCol"
                     >
                       {isExpanded ? "▼" : "►"}
@@ -70,10 +77,8 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
       <button className="styleToggle" onClick={toggleTableStyle}>
         Toggle Table Style
       </button>
-
     </div>
   );
 };
-
 
 export default DataTable;

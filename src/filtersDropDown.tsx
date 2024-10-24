@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface FilterDropdownProps {
   filterOptions: string[];
@@ -11,7 +11,8 @@ const FilterDropdown: React.FC<FilterDropdownProps> = ({ filterOptions, onChange
     <div className="filterDropdownContainer">
       <label>{label}</label>
       <select title="filter" onChange={(e) => onChange(e.target.value)}>
-        {filterOptions.map(option => (
+        <option value="">Filter by {label}</option>
+        {filterOptions.map((option) => (
           <option key={option} value={option}>
             {option}
           </option>
