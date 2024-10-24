@@ -1,35 +1,183 @@
-
-
-/* Regular Zebra striped table */
-.zebra tbody tr:nth-child(odd) {
-  background-color: #f2f2f2;  /* Light gray for odd rows */
+/* Element Selectors */
+body {
+  background-color: rgb(190, 190, 201);
+  font-family: "Agdasima", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.zebra tbody tr:nth-child(even) {
-  background-color: #ffffff;  /* White for even rows */
+h1 {
+  color: #063c75;
+  font-family: "Agdasima", sans-serif;
+  font-size: 2em;
+  margin: 15px;
+  padding: 0;
+  text-align: center;
 }
-
-/* Inverse Zebra striped table */
-.inverse-zebra tbody tr:nth-child(odd) {
-  background-color: #ffffff;  /* White for odd rows */
-}
-
-.inverse-zebra tbody tr:nth-child(even) {
-  background-color: #f2f2f2;  /* Light gray for even rows */
-}
-
 
 table {
+  border: black 0px solid;
+  padding: 0;
   width: 100%;
-  border-collapse: collapse;
 }
 
-table th, table td {
+table th,
+table td {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-table th {
-  background-color: #4CAF50;
+/* Class Selectors */
+.expandCol {
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  width: 30px;
+}
+
+.filterArea {
+  align-items: center;
+  background-color: #063c75;
+  color: rgb(190, 190, 201);
+  display: flex;
+  font-family: "Agdasima", sans-serif;
+  font-size: larger;
+  gap: 10px;
+  justify-content: space-around;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 80%;
+}
+
+.filterDropdownContainer label {
+  line-height: 1.5;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.filterDropdownContainer select {
+  background-color: rgb(190, 190, 201);
+  border: 1px solid #063c75;
+  border-radius: 5px;
+  font-family: "Agdasima", sans-serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.inverse-zebra tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.inverse-zebra tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.resetButton {
+  background-color: #f44336;
+  border: none;
+  border-radius: 4px;
   color: white;
+  cursor: pointer;
+  font-family: "Agdasima", sans-serif;
+  margin-left: 10px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.resetButton:hover {
+  background-color: #d32f2f;
+}
+
+.searchContainer {
+  align-items: center;
+  background-color: #063c75;
+  color: rgb(190, 190, 201);
+  display: flex;
+  flex-direction: row;
+  font-family: "Agdasima", sans-serif;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 80%;
+}
+
+.searchContainer input {
+  background-color: rgb(190, 190, 201);
+  border: 1px solid rgb(190, 190, 201);
+  border-radius: 4px;
+  font-family: "Agdasima", sans-serif;
+  padding: 8px;
+  text-align: center;
+  width: 50%;
+}
+
+.searchSubTitle {
+  color: rgb(190, 190, 201);
+  font-size: 0.7em;
+  line-height: 1;
+  margin: 0;
+}
+
+.searchText {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.searchTitle {
+  color: rgb(190, 190, 201);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.styleToggle {
+  background-color: #063c75;
+  border: none;
+  border-radius: 4px;
+  color: rgb(190, 190, 201);
+  cursor: pointer;
+  display: flex;
+  font-family: "Agdasima", sans-serif;
+  font-size: larger;
+  justify-content: center;
+  margin: 20px 0px;
+  transition: background-color 0.3s;
+}
+
+.styleToggle:hover {
+  background-color: rgb(190, 190, 201);
+  color: #063c75;
+}
+
+.table-container {
+  font-family: "Agdasima", sans-serif;
+  margin: 0 auto;
+  overflow-x: auto;
+  text-align: left;
+  width: 82%;
+}
+
+.tableHead {
+  background-color: #063c75;
+  border: 0px;
+  color: rgb(190, 190, 201);
+  font-family: "Agdasima", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+.zebra tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.zebra tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
 }

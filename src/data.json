@@ -1,5 +1,62 @@
 [
-    { "model": "Urus", "make": "Lamborghini", "year": 2017, "transmission": "Automatic" },
-    { "model": "Cayenne Turbo", "make": "Porsche", "year": 2018, "transmission": "Automatic" },
-    { "model": "Durango SRT", "make": "Dodge", "year": 2018, "transmission": "Automatic" }
-  ]
+  {
+    "model": "Model X",
+    "make": "Tesla",
+    "year": 2019,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Range Rover Sport",
+    "make": "Land Rover",
+    "year": 2020,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Q8",
+    "make": "Audi",
+    "year": 2020,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Mustang GT",
+    "make": "Ford",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Civic Type R",
+    "make": "Honda",
+    "year": 2021,
+    "transmission": "Manual"
+  },
+  {
+    "model": "Camaro SS",
+    "make": "Chevrolet",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Challenger Hellcat",
+    "make": "Dodge",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "F-150",
+    "make": "Ford",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Cayenne",
+    "make": "Porsche",
+    "year": 2021,
+    "transmission": "Automatic"
+  },
+  {
+    "model": "Golf GTI",
+    "make": "Volkswagen",
+    "year": 2021,
+    "transmission": "Manual"
+  }
+]
