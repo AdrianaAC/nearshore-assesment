@@ -51,6 +51,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
         </thead>
         <tbody>
           {data.map((row, index) => {
+            // Check if the current row is expanded
             const isExpanded = expandedRows.includes(index);
             return (
               <React.Fragment key={index}>
@@ -60,9 +61,11 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
                       onClick={() => toggleRow(index)}
                       className="expandCol"
                     >
+                      {/* Show the appropriate icon based on whether the row is expanded */}
                       {isExpanded ? "▼" : "►"}
                     </button>
                   </td>
+                  {/* Conditionally render row details based on whether the row is expanded */}
                   <td>{isExpanded ? row.model : ""}</td>
                   <td>{isExpanded ? row.make : ""}</td>
                   <td>{isExpanded ? row.year : ""}</td>
@@ -73,7 +76,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           })}
         </tbody>
       </table>
-
+      {/* Button to toggle the table style */}
       <button className="styleToggle" onClick={toggleTableStyle}>
         Toggle Table Style
       </button>
